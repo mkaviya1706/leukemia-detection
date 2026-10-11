@@ -168,40 +168,10 @@ These values represent the recorded experimental results for the final configura
 - **Explainable AI:** SHAP
 - **Development environment:** Kaggle Notebook
 
-## Project Structure
 
-A suggested repository structure is shown below. Adjust the filenames to match your actual project files.
 
-```text
-leukemia-detection/
-├── README.md
-├── notebooks/
-│   ├── 01_data_preprocessing.ipynb
-│   ├── 02_feature_extraction.ipynb
-│   ├── 03_feature_selection.ipynb
-│   ├── 04_classification.ipynb
-│   └── 05_explainability_agents.ipynb
-├── results/
-│   ├── model_comparison.png
-│   ├── confusion_matrix.png
-│   ├── gradcam_explanation.png
-│   └── shap_feature_importance.png
-├── requirements.txt
-└── .gitignore
-```
 
-## Installation
-
-Install the required Python packages in your Python environment:
-
-```bash
-pip install numpy pandas matplotlib opencv-python pillow
-pip install torch torchvision transformers scikit-learn shap xgboost
-```
-
-For GPU acceleration, install the PyTorch version compatible with your CUDA environment.
-
-## Execution
+### Execution
 
 1. Download the C-NMC dataset from its authorized source.
 2. Configure the dataset paths in the notebooks.
@@ -212,14 +182,14 @@ For GPU acceleration, install the PyTorch version compatible with your CUDA envi
 
 Run the notebooks in the required order, ensuring that the intermediate feature files and trained models are available to subsequent stages.
 
-## Limitations
+### Limitations
 
 - The current classification task focuses on HEM and ALL.
 - Results depend on the dataset, preprocessing procedure, and evaluation setup.
 - The model-based risk category is a screening-support output, not a clinically validated risk score.
 - Further external validation is required before considering real-world clinical use.
 
-## Future Enhancements
+### Future Enhancements
 
 - Extend the framework to additional leukemia classes.
 - Evaluate performance on independent external datasets.
@@ -227,12 +197,4 @@ Run the notebooks in the required order, ensuring that the intermediate feature 
 - Enhance visual explanations and structured report generation.
 - Develop a user-friendly application after appropriate validation.
 
-## Disclaimer
-
-This project is developed for academic research and educational purposes. It is **not a medical diagnostic tool** and must not be used as a replacement for professional medical examination, laboratory testing, or clinical judgment.
-
-## Author
-
-**Project:** Explainable Agentic AI-Based Leukemia Detection from Blood-Smear Images
-
-**Domain:** Artificial Intelligence, Deep Learning, Machine Learning, Explainable AI, and Agentic AI
+,,,
